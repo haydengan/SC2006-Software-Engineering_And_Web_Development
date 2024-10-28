@@ -1,0 +1,350 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 0; 
+    background-color: #e5f3f5;
+}
+/* background1 */
+.half-background {
+    width: 60%; /* Set width to half */
+    height: 100%; /* Full height */
+    background-image: URL('images/loginbackground.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire div */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center; /* Center the background image */
+    position: absolute; /* Position it absolutely */
+    right: 0; /* Align to the left */
+}
+
+body.indexbackground {
+    background-image: url('images/indexbackground.png');
+    background-size: 55%;
+    background-position: -50px 100%;
+    background-repeat: no-repeat;
+    background-color: #e5f3f5;
+}
+
+a {
+    color: #0079a1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005f7a;
+}
+
+/* Menu Styles */
+#menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #111;
+}
+
+#menu div {
+    float: right;
+    color: white;
+  
+}
+
+/* Form Styles */
+input[type=text], input[type=password], input[type=email], input[type=number], select, textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #41659b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input.style2 {
+    width: 100%;
+    background-color: #174a5c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Button Styles */
+button, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+}
+
+button:hover, .button:hover, button:focus, .button:focus {
+    background-color: #0079a1;
+    color: white;
+}
+
+button.secondary, .button.secondary {
+    background-color: #e7e7e7;
+    border-color: #dadada;
+    color: #333333;
+}
+
+button.secondary:hover, .button.secondary:hover, button.secondary:focus, .button.secondary:focus {
+    background-color: #dadada;
+    color: #333333;
+}
+
+button.success, .button.success {
+    background-color: #5e8949;
+    border-color: #537840;
+    color: white;
+}
+
+button.success:hover, .button.success:hover, button.success:focus, .button.success:focus {
+    background-color: #537840;
+    color: white;
+}
+
+button.disabled, .button.disabled, button[disabled], .button[disabled] {
+    background-color: #0079a1;
+    color: white;
+    cursor: default;
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+button.disabled:hover, .button.disabled:hover, button.disabled:focus, .button.disabled:focus, button[disabled]:hover, .button[disabled]:hover, button[disabled]:focus, .button[disabled]:focus {
+    background-color: #008cba;
+    color: white;
+}
+
+/* Additional Styles */
+.split.button span {
+    border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+.split.button span:before {
+    border-top-style: solid;
+    border-width: 0.375rem;
+    top: 48%;
+    margin-left: -0.375rem;
+    border-color: white transparent transparent transparent;
+}
+
+.dropdown.button.large {
+    padding-right: 3.625rem;
+}
+
+.dropdown.button.large:before {
+    border-width: 0.3125rem;
+    right: 1.71875rem;
+    margin-top: -0.15625rem;
+    border-color: white transparent transparent transparent;
+}
+
+.dropdown.button.secondary:before {
+    border-color: #333333 transparent transparent transparent;
+}
+
+/* animation */
+.animated-header {
+    animation: example 5s infinite;
+    font-size: 60px;
+    width: fit-content; /* Optional: limits the width of the heading */
+    margin: 50px 0 0 80px; /* Add top and left margin */
+    text-align: left;
+    text-align: center; /* Optional: centers the text */
+    font-family: 'Pacifico', cursive;
+  }
+  
+  @keyframes example {
+    0%   {color: rgb(93, 148, 174);}
+    25%  {color: rgb(22, 155, 22);}
+    50%  {color: rgb(39, 154, 131);}
+    100% {color: rgb(90, 73, 151);}
+  }
+
+/*table*/
+
+
+.box-table
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin: 1px 0px 0px 100px;
+    width: 400px;
+    text-align: left;
+    border-collapse: collapse;
+    
+    
+}
+.box-table th
+{
+    font-size: 18px;
+    font-weight: normal;
+    padding: 8px;
+    color: #039;
+    
+    
+}
+.box-table td
+{
+    padding: 8px;
+    background: #3b83a8; 
+    color: rgb(255, 255, 255);
+    border-top: 1px solid transparent;
+    
+}
+
+.box-table1
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 60px;
+    margin-top: -150px; 
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+
+}
+
+.box-table1 th {
+    padding: 8px;
+    background: #394656;  /* Header background color */
+    color: rgb(255, 255, 255); /* Header text color */
+}
+.box-table1 tr:nth-child(odd) {
+    background: #567984; /* Background color for odd rows */
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+.box-table1 tr:nth-child(even) {
+    background: #468d92; /* Background color for even rows */
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+.box-table1 td
+{
+    padding: 15px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid transparent;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    
+}
+
+.box-table1 a {
+    color: #ffffff; /* Change this to your desired color */
+    text-decoration: none; /* Removes underline, if you want */
+}
+
+fieldset {
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding for inner spacing if desired */
+    
+     /* Optional: Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    margin: 50px 0px 0px 30px;
+}
+
+.welcome-message {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    color: #172071; /* Change text color */
+    font-size: 20px; /* Change font size */
+    margin: 5px 0px 0px 90px;
+}
+
+.error-message {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    color: #172071; /* Change text color */
+    font-size: 15px; /* Change font size */
+    margin: 5px 0px 0px 100px;
+}
+
+
+.login-image {
+    position: absolute;
+    top: 475px; /* Adjust as needed */
+    width: 700px; /* Set a width or height as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: -1; /* Send the image behind the table */
+}
+
+body.viewactivitybackground {
+    background-image: url('images/viewactivitybackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* Fallback color */
+    
+}
+
+.activity-header {
+    font-size: 4em; /* Increase font size */
+    color: #0d6a7b; /* Change text color to green */
+    margin-top: 20px; /* Add margin at the top */
+    margin-left: 150px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+    font-family: 'Dancing Script', cursive; /* Change font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.activity-count {
+    font-size: 2em; /* Set the font size */
+    color: #339bae; /* Change text color to a dark gray */
+    margin: 10px 0; /* Add some margin above and below */
+    margin-left: 150px;
+    font-family: 'Dancing Script', cursive;/* Use a sans-serif font */
+}
+
+.form-container {
+    display: flex;              /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;       /* Center items vertically */
+    margin-top: 10%;         /* Adjust this value to set how far from the left edge */
+}
+
